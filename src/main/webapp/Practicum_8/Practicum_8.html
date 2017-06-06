@@ -1,0 +1,45 @@
+<html>
+	<head>
+	  	<title>My Title</title>
+	  	<link rel="stylesheet" type="text/css" href="Practicum_8.css">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+  	<body>
+  		<div id="tableDIV">
+  		<table id="landTafel">
+				<tr>
+					<th>Land</th>
+					<th>Hoofdstad</th>
+					<th>Regio</th>
+					<th>Oppervlakte</th>
+					<th>Inwoners</th>
+				</tr>
+		</table>
+		</div>
+		
+		<div class="container">
+		<form id="updateForm">
+		</form>
+		</div>
+		
+		<input type="text" id="zoekWaarde">
+		<button onclick="zoekFunctie()" id="zoekKnop">Zoek</button>
+		
+		<form id='insertForum'>
+		<label>code: </label><input type='text' name='code'><br>
+		<label>name: </label><input type='text' name='name'><br>
+		<label>continent: </label><input type='text' name='continent'><br>
+		<label>region: </label><input type='text' name='region'><br>
+		<label>surfacearea: </label><input type='number' name='surface'><br>
+		<label>population: </label><input type='number' name='pop'><br>
+		<label>code2: </label><input type='text' name='code2'><br>
+		<label>capital: </label><input type='text' name='hoofdstad'><br>
+		<label>regering: </label><input type='text' name='regering'><br>
+		<label>latitude: </label><input type='number' name='lat'><br>
+		<label>longitude: </label><input type='number' name='longitude'><br>
+		<input type='button' id='insert' name='action' value='insert'>
+		</form>
+  		
+  	    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+    	<script src="Practicum_8.js"></script>
+  	</body>

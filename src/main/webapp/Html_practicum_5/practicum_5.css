@@ -1,0 +1,61 @@
+h1{
+	font-size: 1.2em;
+	background:#736D6D;
+	color:white;
+	padding-left:10px;
+}
+
+body{
+	background:#A8A0A0;
+}
+
+ul{
+	list-style-type: none;
+	padding-left:1px;
+	margin-left:1px;
+}
+
+th{
+	padding-left:1px;
+	margin-left:1px;
+	text-align: left;
+}
+
+td:hover{
+	color:white;
+}
+
+table{
+	display: block;
+	overflow-x: auto;
+	background:#736D6D;
+	width:100%;
+}
+
+@media only screen and (min-width: 700px){
+	#locatie{
+		width:50%;
+		float:left;
+	}
+
+	#weer{
+		width:100%;
+		margin-left:20px;
+	}
+
+	#mijnlocatie{
+		float:left;
+		width:50%;
+	}
+
+	#landWeer{
+		width:100%;
+		margin-left:10px;
+	}
+
+	#vakantie{
+		float:left;
+		width:100%;
+    	margin-left: 10px;
+	}
+}
