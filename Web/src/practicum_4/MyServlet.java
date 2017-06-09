@@ -1,8 +1,4 @@
-package practicum_5;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.Socket;
+package practicum_4;
 
 import java.io.*;
 import java.net.Socket;
@@ -18,11 +14,6 @@ public class MyServlet extends Thread {
     @Override
     public void run() {
         try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e1) {
-            e1.printStackTrace();
-        }
-        try {
         InputStream is = socket.getInputStream();
         Scanner sc = new Scanner(is);
         while (sc.hasNextLine()) {
@@ -30,7 +21,7 @@ public class MyServlet extends Thread {
         }
      
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-        out.println("HTTP/1.1  200 OK");
+        out.println("HTTP/1.1 200 OK\n\nSUCCES");
          
         socket.close();
         } catch (IOException e) {
