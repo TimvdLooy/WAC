@@ -1,0 +1,26 @@
+table {
+    border-spacing: 0;
+    border-style: solid;
+    border-color: black;
+}
+
+#tableDIV{
+	max-width: 716px;
+    max-height:500px;
+    overflow-y:auto;
+}
+
+th{
+	text-align:left;
+}
+#zoekKnop{
+	margin:5px;
+}
+
+#zoekWaarde{
+	margin:5px;
+}
+
+#updateForm{
+	
+}
